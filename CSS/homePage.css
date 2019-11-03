@@ -1,12 +1,168 @@
 body, html{
 	height: 100%;
+	margin: 0px;
 }
+div{
+	height: 100%;
+}
+.parallax h1{
+	padding-top: 20%;
+	margin: 0px;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 80px;
+	letter-spacing: 6px;
+	word-spacing: 6px;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
 
+}
 .parallax{
-	background-image: url(Img/background.png);
+	background-image: url('../Img/background.png');
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.picture {
+	border:10px solid white;
+	margin-top: 13%;
+	margin-left: 43%;
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.picture img{
+    width: auto;
+    height: 100%;
+    margin-left: -10%;
+}
+@media only screen and (max-width: 1000px){
+	.picture {
+		margin-top: 13.5%;
+		margin-left: 42%;
+    	display: inline-block;
+    	position: absolute;
+    	width: 200px;
+    	height: 200px;
+    	overflow: hidden;
+    	border-radius: 50%;
+	}
+}
+.socialMedia{
+	height: 80%;
+	background-color: 	
+}
+#facebook{
+	margin-top: 10%;
+	margin-left: 45.7%;
+	width: 40px;
+	height: 40px;
+}
+#instagram{
+	margin-top: 10%;
+	width: 40px;
+	height: 40px;
+}
+#linkedin{
+	margin-top: 10%;
+	width: 40px;
+	height: 40px;
+}
+.socialMedia p{
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+.education{
+	padding-left: 8%;
+	padding-right: 8%;
+	height: 70%;
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+.education p, .education h4{
+	display: inline-block;
+	text-align: left;
+}
+.education h2{
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 30px;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	color: #000000;
+}
+.skills h2{
+	text-align: center;
+}
+.skills{
+	height: 70%;
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+.languages h2{
+	text-align: center;
+}
+.languages{
+	height: 60%;
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+.info{
+	height: 70%;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
 }
