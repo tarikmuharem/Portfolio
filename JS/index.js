@@ -1,6 +1,6 @@
 function startTheColors(){
 
-	setTimeout("stopTheColors()", 3000);
+	setTimeout("stopTheColors()", 2200);
 }
 function stopTheColors(){
 	var elements = document.getElementsByClassName('text');
