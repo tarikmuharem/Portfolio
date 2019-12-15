@@ -12,74 +12,79 @@
 	<meta name="description" content="Portfolio">
 	<title>Tarik Muharem</title>
 	<link href="CSS/homePage.css" rel="stylesheet" type="text/css">
+	<script src="JS/index.js"></script>
 </head>
-<body>
-	<div class="parallax">	
-		<h1>Tarik Muharem</h1>
+<body onload="startTheColors();">
+	<svg id="main-svg" width="100%" height="100%" viewBox="0 0 200 100" preserveAspectRatio="none">
+		<path fill="transparent" stroke="#e74c3c" stroke-width="2" d="M47 5 L47 20 L22 20 L22 2 L2 2 L2 98 L98 98 L98 70 L19 70 L19 78 L90 78 L90 88 L8 88 L8 42 L82 42 L82 47" class="line"></path>
+		<path fill="transparent" stroke="#2980b9" stroke-width="2" d="M75 5 L75 20 L50 20 L50 26 L15 26 L15 8 L5 8 L5 35 L89 35 L89 47" class="line1"></path>
+		<path fill="transparent" stroke="#9b59b6" stroke-width="2" d="M99 5 L99 20 L79 20 L79 26 L55 26 L55 30 L70 30 L84 30 L84 24 L104 24 L104 16 L116 16 L116 24 L140 24 L140 30 L98 30 L98 47" class="line1"></path>
+		<path fill="transparent" stroke="#f1c40f" stroke-width="2" d="M122 5 L122 20 L147 20 L147 26 L185 26 L185 8 L195 8 L195 35 L106 35 L106 47" class="line1"></path>
+		<path fill="transparent" stroke="#2ecc71" stroke-width="2" d="M150 5 L150 20 L179 20 L179 2 L198 2 L198 98 L102 98 L102 70 L181 70 L181 78 L110 78 L110 88 L192 88 L192 42 L113 42 L113 47" class="line"></path>
+	<header class="navigation">
+		<ul class="navigation-bar">
+			<li><a href="javascript:switchToAboutMe()" class="three-d" id="nav-about-me">About Me
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">About Me</span>
+					<span class="back">About Me</span>
+				</span></a>
+			</li>
+			<li><a href="javascript:switchToEducation()" class="three-d" id="nav-education">Education
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Education</span>
+					<span class="back">Education</span>
+				</span></a>
+			</li>
+			<li><a href="javascript:switchToSkills()" class="three-d" id="nav-skills">Skills
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Skills</span>
+					<span class="back">Skills</span>
+				</span></a>
+			</li>
+			<li><a href="javascript:switchToProjects()" class="three-d" id="nav-projects">Projects
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Projects</span>
+					<span class="back">Projects</span>
+				</span></a>
+			</li>
+			<li><a href="javascript:switchToProjects()" class="three-d" id="nav-contact-me">Contact Me
+				<span aria-hidden="true" class="three-d-box">
+					<span class="front">Contact Me</span>
+					<span class="back">Contact Me</span>
+				</span></a>
+			</li>
+		</ul>
+	</header>
+	<div class="home-home" id="home-home">
+		<svg viewBox="0 0 600 150">
+			 <symbol id="name">
+			    <text text-anchor="middle" x="50%" y="98%">Tarik Muharem</text>
+			  </symbol>  
+			  <use xlink:href="#name" class="text"></use>
+			  <use xlink:href="#name" class="text"></use>
+			  <use xlink:href="#name" class="text"></use>
+			  <use xlink:href="#name" class="text"></use>
+			  <use xlink:href="#name" class="text"></use>
+		</svg>
+	</div>
+	<div class="about-me" id="about-me">
 		<div class="picture">
-			<img src="Img/profile.jpg" alt="Profile picture">
+			
+		</div>
+		<div class="short-info">
+			<p>Third year Software Engineering student with good knowledge in design, installation, testing and maintenance of software systems. Equipped with a diverse and promising skill-set. Proficient in various platforms, languages, and embedded systems. Experienced with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.</p>
 		</div>
 	</div>
-	<div class="socialMedia">
-		<a href="https://www.facebook.com/ohneKinderschanderWelt"><img id="facebook" src="Img/facebook.png"></a>
-		<a href="https://www.instagram.com/tarik_muharem/?hl=en"><img id="instagram" src="Img/instagram.png"></a>
-		<a href="https://www.linkedin.com/in/tarik-muharem-52a590151/"><img id="linkedin" src="Img/linkedin.png"></a>
-		<p>Third year Software Engineering student with good knowledge in design, installation, testing and maintenance of software systems. Equipped with a diverse and promising skill-set. Proficient in various platforms, languages, and embedded systems. Experienced with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.</p>
+	<div class="education" id="education">
+		
 	</div>
-	<div class="parallax"></div>
-		<div class="education">
-			<h2>Education</h2><br>
-			<p>September 2013 - May 2017</p> <h4>JU SŠC Hadžići, Gymnasium</h4>
-			<ul type="circle">
-				<a href="https://sscha.edu.ba/"><img id="SSC" src="Img/SSC.png"></a>
-				<li>Earned my High School diploma, worked on couple projects (HFF, E-škola) and competed in mathematics and BURCH Olympics, where I won 3rd place together with my friend and colleague Aldin Beriša.</li>
-			</ul><br>
-			<p>October 2017 - Present</p> <h4>International University of Sarajevo, Bachelor of Software Engineering</h4>
-			<ul type="circle">
-				<a href="https://www.ius.edu.ba/"><img id="IUS" src="Img/IUS.png"></a>
-				<li>Third year Software Engineering student and member of DevIUS club.</li>
-			</ul>
-		</div>
-	<div class="parallax"></div>
-		<div class="skills">
-			<h2>Skills</h2>
-			<h4>Programming</h4>
-			<h4>Database Management</h4>
-			<h4>Visual Design Skills</h4>
-			<h4>Knowledge in UI/UX</h4>
-			<h4>Leadership Skills</h4>
-			<h4>Adaptability</h4>
-
-		</div>
-	<div class="parallax"></div>
-		<div class="languages">
-			<h2>Languages</h2>
-			<h4>Bosnian</h4>
-			<h4>English</h4>
-			<h4>Deutsch</h4>
-			<h4>Turkish</h4>
-		</div>
-	<div class="parallax"></div>
-		<div class="info">
-			<h2>Info</h2>
-			<h4>Address</h4>
-			<p>Stari Grivići 46, Hadžići, Federation of Bosnia and Herzegovina</p>
-			<h4>Phone</h4>
-			<p>+38761552247</p>
-			<h4>Email</h4>
-			<a href="mailto:tare98muharem@gmail.com">tare98muharem@gmail.com</a>
-		</div>
-	<div class="parallaxLast">
-		<form class="form">
-			<input class="name" type="text" name="Name" placeholder="Name"><br>
-			<input class="surname" type="text" name="Surname" placeholder="Surname"><br>
-			<input class="e-mail" type="text" name="E-mail" placeholder="E-mail"><br>
-			<textarea class="question" rows="10" placeholder="Question"></textarea><br>
-			<input class="button" type="submit" name="Send">
-		</form><br>
-		<p>Progress:</p>
-		<a href="first-commit.html"><img src="Img/html.png"></a>
-		<p class="section">Copyright &copy Tarik Muharem 2019</p>
+	<div class="skills" id="skills">
+		
 	</div>
+	<div class="projects" id="projects">
+		
+	</div>
+	<div class="contact-me" id="contact-me"></div>
+	<script src="JS/index.js"></script>
 </body>
 </html>

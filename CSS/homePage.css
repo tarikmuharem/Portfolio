@@ -1,252 +1,219 @@
-body, html{
-	height: 100%;
-	margin: 0px;
-}
-div{
-	height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+html, body {
+  height: 100%;
 }
 
-.parallax h1{
-	padding-top: 20%;
-	margin: 0px;
+body {
+  background: #111;
+  background-size: 100%;
+  font: 60px Rubik;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* Navigation bar style */
+.navigation-bar {
+	margin: 0;
+	display: block;
 	text-align: center;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 80px;
-	letter-spacing: 6px;
-	word-spacing: 6px;
-	color: #FFFFFF;
-	font-weight: 700;
+	padding: 0;
+}
+.navigation-bar li {
+	display: inline-block;
+}
+.navigation-bar li a {
+	color: #fff;
+	display: block;
 	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
-
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10.1px;
 }
-.parallax{
-	background-image: url('../Img/background.png');
-	min-height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+/* Navigation bar animation style */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
 }
-.picture {
-	filter: grayscale(100%);
+.three-d:hover .three-d-box, .three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
 	position: absolute;
-	border:10px solid white;
-	margin-left: 43%;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    transform: translateY(calc(0% + 200px));
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
-.picture:hover{
-	filter: grayscale(0%);
+.front {
+	transform: rotatex(0deg) translatez(25px);
 }
-.picture img{
-    width: auto;
-    height: 100%;
-    margin-left: -10%;
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
 }
-.socialMedia{
-	height: 80%;
-	background-color: 	
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #111;
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
 }
-#facebook{
-	filter: grayscale(100%);
-	margin-top: 150px;
-	margin-left: 45.7%;
-	width: 40px;
-	height: 40px;
+#nav-about-me{
+	border-style: solid;
+	border-width: 10px;
+	border-color: #e74c3c;
 }
-#facebook:hover {
-	filter: grayscale(0%);
+#nav-education{
+	border-style: solid;
+	border-width: 10px;
+	border-color: #2980b9;
 }
-#instagram{
-	filter: grayscale(100%);
-	margin-top: 150px;
-	width: 40px;
-	height: 40px;
+#nav-skills{
+	border-style: solid;
+	border-width: 10px;
+	border-color: #9b59b6;
 }
-#instagram:hover {
-	filter: grayscale(0%);
+#nav-projects{
+	border-style: solid;
+	border-width: 10px;
+	border-color: #f1c40f;
 }
-#linkedin{
-	filter: grayscale(100%);
-	margin-top: 150px;
-	width: 40px;
-	height: 40px;
+#nav-contact-me{
+	border-style: solid;
+	border-width: 10px;
+	border-color: #2ecc71;
 }
-#linkedin:hover {
-	filter: grayscale(0%);
+#nav-about-me .back{
+	background-color: #e74c3c;
 }
-.socialMedia p{
-	text-align: center;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 20px;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	color: #000000;
-	font-weight: normal;
-	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
+#nav-education .back{
+	background-color: #2980b9;
+}
+#nav-skills .back{
+	background-color: #9b59b6;
+}
+#nav-projects .back{
+	background-color: #f1c40f;
+}
+#nav-contact-me .back{
+	background-color: #2ecc71;
+}
+/* Animation for the name */
+.home-home{
+	display: block;
+}
+svg {
+  	position: absolute;
+  	width: 100%;
+}
+.text {
+	display: none;
+  	fill: none;
+  	stroke-width: 2;
+  	stroke-linejoin: round;
+  	stroke-dasharray: 70 330;
+  	stroke-dashoffset: 0;
+  	-webkit-animation: stroke 3s infinite linear;
+  	animation: stroke 3s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  	stroke: #e74c3c;
+  	-webkit-animation-delay: -1.2s;
+  	animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  	stroke: #f1c40f;
+  	-webkit-animation-delay: -2.4s;
+  	animation-delay: -2.4s;
+}	
+.text:nth-child(5n + 3) {
+  	stroke: #2980b9;
+  	-webkit-animation-delay: -3.6s;
+  	animation-delay: -3.6s;
+}	
+.text:nth-child(5n + 4) {
+  	stroke: #9b59b6;
+  	-webkit-animation-delay: -4.8s;
+  	animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+	stroke: #2ecc71;
+  	-webkit-animation-delay: -6s;
+  	animation-delay: -6s;
+}
+@-webkit-keyframes stroke {
+  	100% {
+    	stroke-dashoffset: -400;
+  	}
+}
+@keyframes stroke {
+  	100% {
+    	stroke-dashoffset: -400;
+  	}
+}
+/* Background for home*/
+svg .line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s;
+}
+svg .line1{
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash1 7.5s;
+}
+@keyframes dash {
+  	from {
+    	stroke-dashoffset: 1000;
+  	}
+  	to {
+		stroke-dashoffset: -1000;
+  	}
+}
+@keyframes dash1{
+	from {
+		stroke-dashoffset:1000;
+	}
+	to {
+		stroke-dashoffset:-1000;
+	}
+}
+/* About Me */
+.about-me{
+	display: none;
+	background-color: tomato;
 }
 .education{
-	padding-left: 8%;
-	padding-right: 8%;
-	height: 100%;
-	text-align: left;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 20px;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	color: #000000;
-	font-weight: normal;
-	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
-}
-.education p, .education h4{
-	display: inline-block;
-	text-align: left;
-}
-.education h2{
-	text-align: center;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 30px;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	color: #000000;
-}
-.education img{
-	display: inline-block;
-	float: left;
-	clear: left;
-	padding-right: 5%;
-	height: 100px;
-	width: 110px;
-}
-.skills h2{
-	text-align: center;
+	display: none;
+	background-color: tomato;
 }
 .skills{
-	height: 60%;
-	text-align: left;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 20px;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	color: #000000;
-	font-weight: normal;
-	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
+	display: none;
+	background-color: tomato;
 }
-.languages h2{
-	text-align: center;
+.projects{
+	display: none;
+	background-color: tomato;
 }
-.languages{
-	height: 60%;
-	text-align: left;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 20px;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	color: #000000;
-	font-weight: normal;
-	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
-}
-.info{
-	height: 100%;
-	text-align: center;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 20px;
-	letter-spacing: 0px;
-	word-spacing: 3px;
-	color: #000000;
-	font-weight: normal;
-	text-decoration: none;
-	font-style: normal;
-	font-variant: normal;
-	text-transform: none;
-}
-input.name{
-	margin-top: 10%;
-	margin-left: 35%;
-	width: 30%;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    outline: none;
-    height: 40px;
-    border-radius: 5px;
-}
-.surname, .e-mail{
-	margin-left: 35%;
-	margin-top: 0.5%;
-	width: 30%;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    outline: none;
-    height: 40px;
-    border-radius: 5px;
-}
-.question{
-	margin-left: 35%;
-	margin-top: 0.5%;
-	width: 30%;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    outline: none;
-    height: 140px;
-    border-radius: 5px;
-}
-.question:focus{
-	border: 3px solid tomato;
-}
-input[type="text"]:focus{
-	border: 3px solid tomato;
-}
-input[type="submit"]{
-	margin-left: 35%;
-	width: 30%;
-	height: 40px;
-	background-color: #49bb17;
-	color: white;
-	border: 3px solid #338310;
-	border-radius: 5px;
-}
-input[type="submit"]:hover{
-	margin-left: 35%;
-	width: 30%;
-	height: 40px;
-	background-color: #338310;
-	color: white;
-	border: 3px solid #338310;
-	border-radius: 5px;
-}
-.parallaxLast{
-	background-color: #1a1a1a;
-	color: white;
-	padding-top: 5;
-}
-.parallaxLast p{
-	text-align: center;
-}
-.section{
-	text-align: center;
-	padding-top: 7%;
-}
-.parallaxLast img{
-	height: 10%;
-	position: absolute;
-	padding-left: 48%; 
+.contact-me{
+	display: none;
+	background-color: tomato;
 }
