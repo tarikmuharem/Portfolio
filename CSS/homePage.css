@@ -199,20 +199,302 @@ svg .line1{
 /* About Me */
 .about-me{
 	display: none;
-	background-color: tomato;
+	background-color: #111;
 }
+#profile-pic{
+	filter: grayscale(100%);
+	margin-top: 7%;
+	margin-left: 10%;
+	height: 30%;
+	width: 30%;
+	border: solid 10px white;
+	border-bottom-width: 60px;
+	display: inline-block;
+}
+#profile-pic:hover{
+	filter: grayscale(0%);
+}
+.right-about{
+	margin-right: 10%;
+	width: 40%;
+	margin-top: 7%;
+  	float: right;
+  	display: inline-block;
+}
+.about-me p{
+	width: 100%;
+	text-align: justify;
+  	color: white;
+  	font: 20px Rubik;
+  	display: inline-block;
+}
+#facebook{
+	margin-left: 33%;
+}
+#facebook-img{
+	filter: grayscale(100%);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+#facebook-img:hover {
+	filter: grayscale(0%);
+}
+#instagram-img{
+	filter: grayscale(100%);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+#instagram-img:hover {
+	filter: grayscale(0%);
+}
+#linkedin-img{
+	filter: grayscale(100%);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+#linkedin-img:hover {
+	filter: grayscale(0%);
+}
+#home-img{
+	width: 40px;
+	height: 40px;
+}
+#home{
+	margin-left: 43%;
+}
+/* Education */
 .education{
 	display: none;
 	background-color: tomato;
 }
+/* Skills */
 .skills{
+	margin-top: 5%;
+	margin-left: 10%;
 	display: none;
-	background-color: tomato;
+	text-align: left;
+  	padding-top: 10px;
+ 	padding-bottom: 10px;
+  	color: white;
+  	font: 20px Rubik;
+  	text-transform: uppercase;
 }
+.container {
+	border-radius: 50%;
+	height: 10px;
+	display: inline-block;
+  	width: 40%;
+  	background: rgb(5,0,108);
+	background: linear-gradient(90deg, rgba(5,0,108,1) 0%, rgba(25,0,107,1) 35%, rgba(255,0,0,1) 100%);
+}
+.c {
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	height: 10px;
+	margin-left: auto;
+	margin-right: 0px;
+	width: 10%;
+	background-color: gray;
+	animation: loadc 4s;
+}
+@keyframes loadc{
+	from {
+		width: 100%;
+		border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	}
+	to{
+		width: 10%;
+		border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	}
+}
+.ruby {
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	height: 10px;
+	margin-left: auto;
+	margin-right: 0px;
+	width: 55%;
+	background-color: gray;
+	animation: loadr 4s;
+} 
+@keyframes loadr{
+	from {
+		width: 100%;
+	}
+	to{
+		width: 55%;
+	}
+}
+.web {
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	height: 10px;
+	margin-left: auto;
+	margin-right: 0px;
+	width: 25%;
+	background-color: gray;
+	animation: loadw 4s;
+} 
+@keyframes loadw{
+	from {
+		width: 100%;
+	}
+	to{
+		width: 25%;
+	}
+}
+.python {
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	height: 10px;
+	margin-left: auto;
+	margin-right: 0px;
+	width: 70%;
+	background-color: gray;
+	animation: loadp 4s;
+} 
+@keyframes loadp{
+	from {
+		width: 100%;
+	}
+	to{
+		width: 70%;
+	}
+}
+.php {
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 40%;
+	height: 10px;
+	margin-left: auto;
+	margin-right: 0px;
+	width: 40%;
+	background-color: gray;
+	animation: loadph 4s;
+} 
+@keyframes loadph{
+	from {
+		width: 100%;
+	}
+	to{
+		width: 40%;
+	}
+}
+.right{
+	margin-right: 10%;
+	text-align: right;
+	float: right;
+	width: 50%;
+}
+.container2 {
+	border-radius: 50%;
+	height: 10px;
+	display: inline-block;
+  	width: 80%;
+  	background: rgb(5,0,108);
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(25,0,107,1) 65%, rgba(5,0,108,1) 100%);
+}
+.bs {
+	border-top-left-radius: 40%;
+	border-bottom-left-radius: 40%;
+	height: 10px;
+	margin-left: 0px;
+	margin-right: auto;
+	width: 5%;
+	background-color: gray;
+	animation: loadbs 4s;
+}
+@keyframes loadbs{
+	from {
+		width: 100%;
+		border-top-left-radius: 40%;
+		border-bottom-left-radius: 40%;
+	}
+	to{
+		width: 5%;
+		border-top-left-radius: 99%;
+		border-bottom-left-radius: 99%;
+	}
+}
+.en {
+	border-top-left-radius: 40%;
+	border-bottom-left-radius: 40%;
+	height: 10px;
+	margin-left: 0px;
+	margin-right: auto;
+	width: 20%;
+	background-color: gray;
+	animation: loaden 4s;
+}
+@keyframes loaden{
+	from {
+		width: 100%;
+		border-top-left-radius: 40%;
+		border-bottom-left-radius: 40%;
+	}
+	to{
+		width: 20%;
+		border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%;
+	}
+}
+.de {
+	border-top-left-radius: 40%;
+	border-bottom-left-radius: 40%;
+	height: 10px;
+	margin-left: 0px;
+	margin-right: auto;
+	width: 40%;
+	background-color: gray;
+	animation: loadde 4s;
+}
+@keyframes loadde{
+	from {
+		width: 100%;
+		border-top-left-radius: 40%;
+		border-bottom-left-radius: 40%;
+	}
+	to{
+		width: 40%;
+		border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%;
+	}
+}
+.tr {
+	border-top-left-radius: 40%;
+	border-bottom-left-radius: 40%;
+	height: 10px;
+	margin-left: 0px;
+	margin-right: auto;
+	width: 85%;
+	background-color: gray;
+	animation: loadtr 4s;
+}
+@keyframes loadtr{
+	from {
+		width: 100%;
+		border-top-left-radius: 40%;
+		border-bottom-left-radius: 40%;
+	}
+	to{
+		width: 85%;
+		border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%;
+	}
+}
+#home-skills{
+	margin-right: 35%;
+}
+/* Projects */
 .projects{
 	display: none;
 	background-color: tomato;
 }
+/* Contact Me */
 .contact-me{
 	display: none;
 	background-color: tomato;
