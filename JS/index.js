@@ -103,10 +103,3 @@ function switchToContactMe(){
 	projects[0].style.display = 'none';
 	contact[0].style.display = 'block';
 }
-	var position1 = $('li:nth-child(2)').position();
-	var left1 = position1.left;
-	var position2 = $('li:nth-child(3)').position();
-	var left2 = position2.left;
-	var sum1 = left1 + left2;
-	var middle1 = sum/2;
-
