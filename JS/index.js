@@ -103,3 +103,19 @@ function switchToContactMe(){
 	projects[0].style.display = 'none';
 	contact[0].style.display = 'block';
 }
+var email = document.getElementsByName("E-mail")
+function validateEmail(email)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
