@@ -10,7 +10,7 @@
     $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = '******************';                   // SMTP email, but i replaced it with * to hide it
-    															// from github, so that other people couldn't see my addres
+    															// from github, so that other people couldn't see my address
     $mail->Password   = '*******************';                  // SMTP password, i replaced it with * for same reason as the email
     $mail->Port       = 465;                                    // TCP port to connect to
     $mail->SMTPSecure = 'ssl';
